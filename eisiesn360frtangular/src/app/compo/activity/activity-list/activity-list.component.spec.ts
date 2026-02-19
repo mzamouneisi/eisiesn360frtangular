@@ -1,21 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import {EsnListComponent} from "../../esn/esn-list/esn-list.component";
+import { ActivityListComponent } from "./activity-list.component";
 
 
-
-describe('EsnListComponent', () => {
-  let component: EsnListComponent;
-  let fixture: ComponentFixture<EsnListComponent>;
+describe('ActivityListComponent', () => {
+  let component: ActivityListComponent;
+  let fixture: ComponentFixture<ActivityListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EsnListComponent ]
+      declarations: [ ActivityListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EsnListComponent);
+    fixture = TestBed.createComponent(ActivityListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

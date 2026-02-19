@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import {CraListComponent} from "../../cra/cra-list/cra-list.component";
+import { ProjectListComponent } from "./project-list.component";
 
-describe('CraListComponent', () => {
-  let component: CraListComponent;
-  let fixture: ComponentFixture<CraListComponent>;
+describe('ProjectListComponent', () => {
+  let component: ProjectListComponent;
+  let fixture: ComponentFixture<ProjectListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CraListComponent ]
+      declarations: [ProjectListComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CraListComponent);
+    fixture = TestBed.createComponent(ProjectListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

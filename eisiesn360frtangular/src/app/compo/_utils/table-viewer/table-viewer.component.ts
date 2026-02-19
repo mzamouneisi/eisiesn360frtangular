@@ -671,7 +671,7 @@ export class TableViewerComponent implements OnInit {
   }
 
   runBatchCraMannualy() {
-    this.tableService.runBatchCraMannualy(
+    this.tableService.runBatchCraExportMannually(
       (res) => {
         alert("Batch Cra executed successfully! res = " + JSON.stringify(res));
       },
