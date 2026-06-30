@@ -1975,7 +1975,7 @@ export class CraFormCalComponent extends MereComponent implements CraObserver {
    * This method aims to calc the days abs/ days worked
    */
   private process(): void {
-    this.logger.debug("******* process deb")
+    // this.logger.debug("******* process deb")
     // this.logger.debug("******* process currentCra:", this.currentCra)
 
     this.numberDayWorked = 0;
@@ -2033,7 +2033,7 @@ export class CraFormCalComponent extends MereComponent implements CraObserver {
         });
       });
     }
-    this.logger.debug("******* process fin this.totalDayToWork=" + this.totalDayToWork)
+    // this.logger.debug("******* process fin this.totalDayToWork=" + this.totalDayToWork)
   }
 
   private calcul_recap(activity: Activity, cda: CraDayActivity, craDay: CraDay) {
@@ -2408,19 +2408,19 @@ export class CraFormCalComponent extends MereComponent implements CraObserver {
   }
 
   refreshMe() {
-    this.logger.debug("**** refreshMe deb this.viewDate : ", this.viewDate)
+    // this.logger.debug("**** refreshMe deb this.viewDate : ", this.viewDate)
 
     setTimeout(() => {
       if (this.notADate(this.viewDate)) this.viewDate = new Date();
       this.viewDate = this.utils.getDate(this.viewDate);
-      this.logger.debug("**** refreshMe av refresh : ", this.viewDate)
+      // this.logger.debug("**** refreshMe av refresh : ", this.viewDate)
       try {
         this.refresh.next(0)
-        this.logger.debug("**** refreshMe ap refresh : ", this.viewDate)
+        // this.logger.debug("**** refreshMe ap refresh : ", this.viewDate)
       } catch (error) {
         this.logger.debug("refreshMe error:", error)
       }
-      this.logger.debug("**** refreshMe fin")
+      // this.logger.debug("**** refreshMe fin")
     }, 500);
   }
 
